@@ -1,0 +1,452 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+		font-family: arial;
+}
+
+.btn-down{
+	width: 100px;
+	height: 40px;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+
+}
+
+
+/*================ WIRE ===============*/
+
+.wire{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #c0392b;
+	position: relative;
+}
+.wire:before{
+	content: "WIRE";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20rem;
+	font-family: arial;
+	opacity: 0.1;
+}
+
+
+.straight{
+	width: 500px;
+	height: 4px;
+	background-color: white;
+	position: relative;
+}
+.straight::before{
+	content: "";
+	position: absolute;
+	left: -18px;
+	top: 18px;
+	width:40px;
+	height:4px;
+	background-color: white;
+	transform: rotate(90deg) ;
+}
+.straight::after{
+	content: "";
+	position: absolute;
+	right: -18px;
+	top: -18px;
+	width:40px;
+	height:4px;
+	background-color: white;
+	transform: rotate(90deg) ;
+}
+
+.btnwire{
+	width: 50px;
+	position: absolute;
+	top: 34px;
+	left: -23px;
+}
+.wire .bulb{
+	width: 50px;
+	position: absolute;
+	top: -112px;
+	right: -23px;
+	z-index: 99;
+}
+
+/*================ NOT ===============*/
+
+
+.not{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #8e44ad;
+	position: relative;
+}
+.not:before{
+	content: "NOT";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20rem;
+	font-family: arial;
+	opacity: 0.1;
+}
+
+.not .symbol{
+  position: relative;
+
+}
+.not .symbol::before {
+	content: '';
+	position: absolute;
+	top: 62px;
+	left: 116px;
+	width: 100px;
+	height: 4px;
+	background-color: white;
+}
+.not .symbol::after {
+	content: '';
+	position: absolute;
+	top: 62px;
+	left: -191px;
+	width: 200px;
+	height: 4px;
+	background-color: white;
+}
+
+.not .up {
+	width: 4px;
+	height: 70px;
+	position: absolute;
+	top: -4px;
+	left: -194px;
+	background-color: white;
+}
+.not .down {
+	width: 4px;
+	height: 50px;
+	position: absolute;
+	top: 65px;
+	right: -88px;
+	background-color: white;
+}
+.not .line {
+	width: 100px;
+	height: 4px;
+	position: absolute;
+	top: 111px;
+	right: -184px;
+	background-color: white;
+}
+.not .btnnot {
+	width: 50px;
+	position: absolute;
+	top: -50px;
+	left: -217px;
+}
+.not .bulbnot {
+	width: 50px;
+	position: absolute;
+	top: 33px;
+	right: -206px;
+}
+
+/*================ OR ===============*/
+
+
+.or{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #34495e;
+	position: relative;
+}
+.or:before{
+	content: "OR";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20rem;
+	font-family: arial;
+	opacity: 0.1;
+}
+
+.or .symbol{
+  position: relative;
+
+}
+
+.or .line1 {
+	position: absolute;
+	width: 200px;
+	height: 5px;
+	background-color: white;
+	top: 40px;
+	left: -182px;
+	border-radius: 50px;
+}
+.or .line2 {
+	position: absolute;
+	width: 120px;
+	height: 5px;
+	background-color: white;
+	top: 83px;
+	left: -104px;
+	border-radius: 50px;
+}
+.or .line3 {
+	position: absolute;
+	width: 120px;
+	height: 4px;
+	background-color: white;
+	top: 62px;
+	right: -106px;
+	border-radius: 50px;
+}
+
+
+.or .up {
+	position: absolute;
+	width: 5px;
+	height: 60px;
+	background-color: white;
+	top: 6px;
+	right: -106px;
+	 border-radius: 50px; 
+}
+
+.or .down {
+	position: absolute;
+	width: 5px;
+	height: 60px;
+	background-color: white;
+	top: 85px;
+	right: 227px;
+	border-radius: 50px;
+}
+.or .bulbor {
+	position: absolute;
+	top: -70px;
+	right: -128px;
+	width: 50px;
+}
+.or #firstcheckbox{
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 16px;
+	left: -228px;
+	opacity: 0;
+	
+}
+
+.or #firstcheckbox:checked ~ .customCheck1{
+	background-image: url(../img/btn2.png);
+}
+
+.or .customCheck1 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -114px;
+	left: -223px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+
+
+.or #secondcheckbox {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 134px;
+	left: -125px;
+	opacity: 0;
+
+}
+
+.or #secondcheckbox:checked ~ .customCheck2{
+	background-image: url(../img/btn2.png);
+}
+
+.or .customCheck2 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -45px;
+	left: -125px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+
+/*================ AND ===============*/
+
+
+.and{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #16a085;
+	position: relative;
+}
+.and:before{
+	content: "AND";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20rem;
+	font-family: arial;
+	opacity: 0.1;
+}
+
+.and .symbol{
+  position: relative;
+
+}
+
+.and .line1 {
+	position: absolute;
+	top: 62px;
+	left: 103px;
+	width: 79px;
+	height: 4px;
+	background-color: white;
+	border-radius: 50px;
+}
+
+.and .line2 {
+	position: absolute;
+	top: 83px;
+	left: -190px;
+	width: 213px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50px;
+}
+
+.and .line3 {
+	position: absolute;
+	top: 40px;
+	left: -99px;
+	width: 120px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50px;
+}
+
+.and .up {
+	position: absolute;
+	top: 62px;
+	left: 178px;
+	width: 4px;
+	height: 58px;
+	background-color: white;
+	border-radius: 50px;
+}
+
+.and .line4 {
+	position: absolute;
+	top: 117px;
+	left: 178px;
+	width: 81px;
+	height: 4px;
+	background-color: white;
+	border-radius: 50px;
+}
+
+.and #fcheck-and{
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 134px;
+	left: -125px;
+	opacity: 0;
+
+}
+.and #seccheck-and{
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 134px;
+	left: -125px;
+	opacity: 0;
+
+}
+
+.and .customCheck3 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -116px;
+	left: -144px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+.and .customCheck4 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -120px;
+	left: -231px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+
+
+.and #fcheck-and:checked ~ .customCheck3{
+	background-image: url(../img/btn2.png);
+}
+.and #seccheck-and:checked ~ .customCheck4{
+	background-image: url(../img/btn2.png);
+}
+
+.and .bulband {
+	position: absolute;
+	top: 37px;
+	left: 233px;
+	width: 50px;
+}

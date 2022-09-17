@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Logic gate</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<!-- Wire -->
+	<section class="wire" id="wire">
+		<div class="straight">
+			<input type="image"  class="btnwire"  src="img/btn1.png">
+			<img src="img/Bulb-Off.png" class="bulb">
+		</div>
+		<a href="#not" class="btn-down">NOT</a>
+	</section>
+	<!-- Not -->
+	<section class="not" id="not">
+		<div class="symbol">
+			<img src="img/not.png">
+			<span class="up"></span>
+			<span class="down"></span>
+			<span class="line"></span>
+			<input type="image"  class="btnnot" src="img/btn1.png">
+			<img src="img/Bulb-On.png" class="bulbnot">
+		</div>
+				<a href="#or" class="btn-down">OR</a>
+
+	</section>
+	<!-- OR -->
+	<section class="or" id="or">
+		<div class="symbol">
+			<img src="img/or.png">
+			<span class="line1"></span>
+			<span class="line2"></span>
+			<span class="line3"></span>
+			<span class="up"></span>
+			<span class="down"></span>
+			<label>
+				<input type="checkbox" id="firstcheckbox">
+				<span class="customCheck1"></span>
+			</label>
+			<label>
+				<input type="checkbox" id="secondcheckbox">
+				<span class="customCheck2"></span>
+			</label>
+			<img src="img/Bulb-Off.png" class="bulbor">
+
+		</div>
+		<a href="#and" class="btn-down">AND</a>
+	</section>
+	<!-- AND -->
+	<section class="and" id="and">
+		<div class="symbol">
+			<img src="img/and.png">
+			<span class="line1"></span>
+			<span class="line2"></span>
+			<span class="line3"></span>
+			<span class="up"></span>
+			<span class="line4"></span>
+			<label>
+				<input type="checkbox" id="fcheck-and">
+				<span class="customCheck3"></span>
+			</label>
+			<label>
+				<input type="checkbox" id="seccheck-and">
+				<span class="customCheck4"></span>
+			</label>
+			<img src="img/Bulb-Off.png" class="bulband">
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

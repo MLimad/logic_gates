@@ -42,7 +42,7 @@ body{
 	position: relative;
 }
 .wire:before{
-	content: "WIRE";
+	content: "YES";
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -53,44 +53,57 @@ body{
 }
 
 
-.straight{
-	width: 500px;
-	height: 4px;
-	background-color: white;
+.wire .symbol{
 	position: relative;
 }
-.straight::before{
+.wire .symbol::before {
 	content: "";
 	position: absolute;
-	left: -18px;
-	top: 18px;
-	width:40px;
-	height:4px;
+	left: 106px;
+	top: 62px;
+	width: 200px;
+	height: 4px;
 	background-color: white;
-	transform: rotate(90deg) ;
 }
-.straight::after{
+.wire .symbol::after {
 	content: "";
 	position: absolute;
-	right: -18px;
-	top: -18px;
-	width:40px;
-	height:4px;
+	right: 115px;
+	top: 62px;
+	width: 250px;
+	height: 4px;
 	background-color: white;
-	transform: rotate(90deg) ;
 }
 
-.btnwire{
-	width: 50px;
+.wire .up {
 	position: absolute;
-	top: 34px;
-	left: -23px;
+	height: 54px;
+	width: 4px;
+	background-color: white;
+	top: 10px;
+	right: -178px;
 }
-.wire .bulb{
+.wire .down {
+	position: absolute;
+	height: 87px;
+	width: 4px;
+	background-color: white;
+	top: 63px;
+	left: -237px;
+}
+
+.btnwire {
 	width: 50px;
 	position: absolute;
-	top: -112px;
-	right: -23px;
+	top: 144px;
+	left: -262px;
+	z-index: 99;
+}
+.wire .bulb {
+	width: 50px;
+	position: absolute;
+	top: -66px;
+	right: -201px;
 	z-index: 99;
 }
 
@@ -449,4 +462,156 @@ body{
 	top: 37px;
 	left: 233px;
 	width: 50px;
+}
+
+/*================ NOR ===============*/
+
+
+
+.nor{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2ecc71;
+	position: relative;
+}
+.nor:before{
+	content: "NOR";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20rem;
+	font-family: arial;
+	opacity: 0.1;
+}
+
+.nor .symbol{
+  position: relative;
+
+}
+.nor .line1 {
+	position: absolute;
+	top: 62px;
+	left: 116px;
+	background-color: white;
+	width: 100px;
+	height: 4px;
+}
+.nor .line2 {
+	position: absolute;
+	top: 40px;
+	left: -138px;
+	background-color: white;
+	width: 155px;
+	height: 5px;
+	border-radius: 50px;
+}
+.nor .line3 {
+	position: absolute;
+	top: 83px;
+	left: -66px;
+	background-color: white;
+	width: 80px;
+	height: 5px;
+	border-radius: 50px;
+}
+.nor .up {
+	position: absolute;
+	top: -15px;
+	left: 213px;
+	background-color: white;
+	width: 4px;
+	height: 81px;
+	border-radius: 50px;
+}
+.nor .up2 {
+	position: absolute;
+	top: -10px;
+	left: -139px;
+	background-color: white;
+	width: 4px;
+	height: 55px;
+	border-radius: 50px;
+}
+
+.nor .down {
+	position: absolute;
+	top: 83px;
+	left: -67px;
+	background-color: white;
+	width: 4px;
+	height: 55px;
+	border-radius: 50px;
+}
+
+.nor .line4 {
+	position: absolute;
+	top: -15px;
+	left: 213px;
+	background-color: white;
+	width: 80px;
+	height: 4px;
+	border-radius: 50px;
+}
+
+.nor .bulbnor {
+	position: absolute;
+	top: -93px;
+	right: -187px;
+	width: 50px;
+	z-index: 99;
+}
+
+#check1-nor {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: -43px;
+	left: -162px;
+	opacity: 0;
+}
+
+#check2-nor {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 128px;
+	left: -90px;
+	opacity: 0;
+
+}
+
+.nor .customCheck5 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -178px;
+	left: -162px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+.nor .customCheck6 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -60px;
+	left: -90px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+
+.nor #check1-nor:checked ~ .customCheck5 {
+	background-image: url(../img/btn2.png);
+}
+.nor #check2-nor:checked ~ .customCheck6{
+	background-image: url(../img/btn2.png);
 }

@@ -615,3 +615,144 @@ body{
 .nor #check2-nor:checked ~ .customCheck6{
 	background-image: url(../img/btn2.png);
 }
+
+/*================ NAND ===============*/
+.nand{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #3498db;
+	position: relative;
+}
+.nand:before{
+	content: "NAND";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20rem;
+	font-family: arial;
+	opacity: 0.1;
+}
+
+.nand .symbol{
+  position: relative;
+
+}
+
+.nand .line1 {
+	position: absolute;
+	top: 83px;
+	left: -66px;
+	background-color: white;
+	width: 80px;
+	height: 5px;
+	border-radius: 50px;
+}
+.nand .line2 {
+	position: absolute;
+	top: 40px;
+	left: -179px;
+	background-color: white;
+	width: 198px;
+	height: 5px;
+	border-radius: 50px;
+}
+.nand .line3 {
+	position: absolute;
+	top: 62px;
+	left: 115px;
+	background-color: white;
+	width: 171px;
+	height: 4px;
+	border-radius: 50px;
+}
+
+.nand .down {
+	position: absolute;
+	top: 83px;
+	left: -66px;
+	background-color: white;
+	width: 5px;
+	height: 65px;
+	border-radius: 50px;
+}
+.nand .down2 {
+	position: absolute;
+	top: 42px;
+	left: -179px;
+	background-color: white;
+	width: 5px;
+	height: 106px;
+	border-radius: 50px;
+}
+
+.nand .up {
+	position: absolute;
+	top: 7px;
+	left: 281px;
+	background-color: white;
+	width: 5px;
+	height: 58px;
+	border-radius: 50px;
+}
+
+.nand .bulbnand {
+	width: 50px;
+	position: absolute;
+	top: -66px;
+	right: -180px;
+	z-index: 99;
+}
+
+#check1-nand {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 122px;
+	left: -203px;
+	opacity: 0;
+}
+
+#check2-nand {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 120px;
+	left: -90px;
+	opacity: 0;
+}
+
+.nand .customCheck7 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -11px;
+	left: -203px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+.nand .customCheck8 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -60px;
+	left: -90px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+
+.nand #check1-nand:checked ~ .customCheck7 {
+	background-image: url(../img/btn2.png);
+}
+.nand #check2-nand:checked ~ .customCheck8{
+	background-image: url(../img/btn2.png);
+}

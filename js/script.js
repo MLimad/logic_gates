@@ -121,7 +121,30 @@ $('#check2-nor').click(function(){
  
 });
 
+/*================= NAND =================*/
 
+$('#check1-nand').click(function(){
+  if ($(this).prop("checked") == true) {
+          if ($('#check2-nand').prop("checked") == true) {
+            $('.bulbnand').attr("src","img/Bulb-Off.png");
+          }
+  }else{
+    $('.bulbnand').attr("src","img/Bulb-On.png");
+
+  }
+
+});
+
+$('#check2-nand').click(function(){
+  if ($(this).prop("checked") == true) {
+          if ($('#check1-nand').prop("checked") == true) {
+            $('.bulbnand').attr("src","img/Bulb-Off.png");
+          }
+  }else{
+    $('.bulbnand').attr("src","img/Bulb-On.png");
+  }
+
+});
 
 
 

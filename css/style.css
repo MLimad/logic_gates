@@ -29,8 +29,25 @@ body{
 
 }
 
+table,tr,td,th {
+	border: 3px solid black;
+	border-collapse: collapse;
+	color: black;
+	text-align: center;
+	width: 150px;
+	font-size: 20px;
+	font-weight: bold;
+} 
+table {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	opacity: 0.3;
+}
+
 
 /*================ WIRE ===============*/
+
 
 .wire{
 	width: 100%;

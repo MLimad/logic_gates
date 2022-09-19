@@ -205,6 +205,9 @@ $('#check1-xnor').click(function(){
     if ($('#check2-xnor').prop("checked") == false) {
       $('.bulbxnor').attr("src","img/Bulb-On.png");
     }
+    if ($('#check2-xnor').prop("checked") == true) {
+      $('.bulbxnor').attr("src","img/Bulb-Off.png");
+    }
 
   }
 
@@ -221,8 +224,11 @@ $('#check2-xnor').click(function(){
     }
   }else{
 
-    if ($('#check2-xnor').prop("checked") == false) {
+    if ($('#check1-xnor').prop("checked") == false) {
       $('.bulbxnor').attr("src","img/Bulb-On.png");
+    }
+    if ($('#check1-xnor').prop("checked") == true) {
+      $('.bulbxnor').attr("src","img/Bulb-Off.png");
     }
 
   }

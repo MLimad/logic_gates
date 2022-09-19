@@ -146,6 +146,37 @@ $('#check2-nand').click(function(){
 
 });
 
+/*================= XOR =================*/
+
+$('#check1-xor').click(function(){
+  if ($(this).prop("checked") == true) {
+      if ($('#check2-xor').prop("checked") == true) {
+        $('.bulbxor').attr("src","img/Bulb-Off.png");
+      }else{
+        $('.bulbxor').attr("src","img/Bulb-On.png");
+
+      }
+  }else{
+    $('.bulbxor').attr("src","img/Bulb-Off.png");
+  }
+
+});
+
+$('#check2-xor').click(function(){
+  if ($(this).prop("checked") == true) {
+    if ($('#check1-xor').prop("checked") == true) {
+      $('.bulbxor').attr("src","img/Bulb-Off.png");
+    }else{
+      $('.bulbxor').attr("src","img/Bulb-On.png");
+
+    }
+  }else{
+    $('.bulbxor').attr("src","img/Bulb-Off.png");
+  }
+
+});
+
+
 
 
 

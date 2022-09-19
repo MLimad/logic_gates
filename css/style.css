@@ -756,3 +756,124 @@ body{
 .nand #check2-nand:checked ~ .customCheck8{
 	background-image: url(../img/btn2.png);
 }
+
+
+/*================ XOR ===============*/
+.xor{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e67e22;
+	position: relative;
+}
+.xor:before{
+	content: "XOR";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20rem;
+	font-family: arial;
+	opacity: 0.1;
+}
+
+.xor .symbol{
+  position: relative;
+
+}
+
+.xor .line1 {
+	position: absolute;
+	top: 62px;
+	left: 114px;
+	background-color: white;
+	width: 100px;
+	height: 4px;
+}
+.xor .line2 {
+	position: absolute;
+	top: 40px;
+	left: -88px;
+	background-color: white;
+	width: 100px;
+	height: 5px;
+}
+.xor .line3 {
+	position: absolute;
+	top: 83px;
+	left: -141px;
+	background-color: white;
+	width: 161px;
+	height: 5px;
+}
+
+.xor .up {
+	position: absolute;
+	top: -25px;
+	left: -88px;
+	background-color: white;
+	width: 5px;
+	height: 69px;
+	border-radius: 50px;
+}
+
+.xor .bulbxor {
+	position: absolute;
+	top: -15px;
+	left: 188px;
+	width: 50px;
+	z-index: 99;
+}
+
+
+#check1-xor {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: -60px;
+	left: -110px;
+	opacity: 0;
+}
+
+#check2-xor {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 61px;
+	left: -183px;
+	opacity: 0;
+}
+
+.xor .customCheck9 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -192px;
+	left: -110px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+.xor .customCheck10 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -122px;
+	left: -183px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+
+.xor #check1-xor:checked ~ .customCheck9 {
+	background-image: url(../img/btn2.png);
+}
+.xor #check2-xor:checked ~ .customCheck10{
+	background-image: url(../img/btn2.png);
+}

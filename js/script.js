@@ -150,31 +150,47 @@ $('#check2-nand').click(function(){
 
 $('#check1-xor').click(function(){
   if ($(this).prop("checked") == true) {
-      if ($('#check2-xor').prop("checked") == true) {
-        $('.bulbxor').attr("src","img/Bulb-Off.png");
-      }else{
-        $('.bulbxor').attr("src","img/Bulb-On.png");
 
-      }
+        if ($("#check2-xor").prop("checked") == false) {
+          $('.bulbxor').attr("src","img/Bulb-On.png");
+        }else if($("#check2-xor").prop("checked") == true){
+          $('.bulbxor').attr("src","img/Bulb-Off.png");
+        }
+
   }else{
-    $('.bulbxor').attr("src","img/Bulb-Off.png");
+    if ($("#check2-xor").prop("checked") == true) {
+      $('.bulbxor').attr("src","img/Bulb-On.png");
+    }else{
+      $('.bulbxor').attr("src","img/Bulb-Off.png");
+
+    }
+
   }
 
 });
 
 $('#check2-xor').click(function(){
   if ($(this).prop("checked") == true) {
-    if ($('#check1-xor').prop("checked") == true) {
-      $('.bulbxor').attr("src","img/Bulb-Off.png");
-    }else{
+
+        if ($("#check1-xor").prop("checked") == false) {
+          $('.bulbxor').attr("src","img/Bulb-On.png");
+        }else if($("#check1-xor").prop("checked") == true){
+          $('.bulbxor').attr("src","img/Bulb-Off.png");
+        }
+
+  }else{
+    if ($("#check1-xor").prop("checked") == true) {
       $('.bulbxor').attr("src","img/Bulb-On.png");
+    }else{
+      $('.bulbxor').attr("src","img/Bulb-Off.png");
 
     }
-  }else{
-    $('.bulbxor').attr("src","img/Bulb-Off.png");
+
   }
 
 });
+
+
 
 
 

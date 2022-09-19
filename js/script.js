@@ -190,6 +190,45 @@ $('#check2-xor').click(function(){
 
 });
 
+/*================= XNOR =================*/
+
+$('#check1-xnor').click(function(){
+  if ($(this).prop("checked") == true) {
+    if ($('#check2-xnor').prop("checked") == true) {
+      $('.bulbxnor').attr("src","img/Bulb-On.png");
+    }
+    if ($('#check2-xnor').prop("checked") == false) {
+      $('.bulbxnor').attr("src","img/Bulb-Off.png");
+    }
+  }else{
+
+    if ($('#check2-xnor').prop("checked") == false) {
+      $('.bulbxnor').attr("src","img/Bulb-On.png");
+    }
+
+  }
+
+});
+
+
+$('#check2-xnor').click(function(){
+  if ($(this).prop("checked") == true) {
+    if ($('#check1-xnor').prop("checked") == true) {
+      $('.bulbxnor').attr("src","img/Bulb-On.png");
+    }
+    if ($('#check1-xnor').prop("checked") == false) {
+      $('.bulbxnor').attr("src","img/Bulb-Off.png");
+    }
+  }else{
+
+    if ($('#check2-xnor').prop("checked") == false) {
+      $('.bulbxnor').attr("src","img/Bulb-On.png");
+    }
+
+  }
+
+});
+
 
 
 

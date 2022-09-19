@@ -910,3 +910,146 @@ table {
 .xor #check2-xor:checked ~ .customCheck10{
 	background-image: url(../img/btn2.png);
 }
+
+
+/*================ XNOR ===============*/
+.xnor{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #bdc3c7;
+	position: relative;
+}
+.xnor:before{
+	content: "XNOR";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20rem;
+	font-family: arial;
+	opacity: 0.1;
+}
+
+.xnor .symbol{
+  position: relative;
+
+}
+
+.xnor .line1 {
+	position: absolute;
+	top: 62px;
+	left: 120px;
+	background-color: white;
+	width: 120px;
+	height: 4px;
+	border-radius: 50px;
+}
+.xnor .line2 {
+	position: absolute;
+	top: 40px;
+	left: -49px;
+	background-color: white;
+	width: 77px;
+	height: 5px;
+	border-radius: 50px;
+}
+.xnor .line3 {
+	position: absolute;
+	top: 83px;
+	left: -107px;
+	background-color: white;
+	width: 131px;
+	height: 5px;
+	border-radius: 50px;
+}
+
+.xnor .line4 {
+	position: absolute;
+	top: 0px;
+	left: 236px;
+	background-color: white;
+	width: 91px;
+	height: 5px;
+	border-radius: 50px;
+}
+.xnor .bulbxnor {
+	position: absolute;
+	top: -77px;
+	left: 296px;
+	width: 50px;
+	z-index: 99;
+}
+
+.xnor .up {
+	position: absolute;
+	top: 0px;
+	left: 235px;
+	background-color: white;
+	width: 5px;
+	height: 66px;
+	border-radius: 50px;
+}
+
+.xnor .up2 {
+	position: absolute;
+	top: 83px;
+	left: -107px;
+	background-color: white;
+	width: 5px;
+	height: 66px;
+	border-radius: 50px;
+}
+
+#check1-xnor {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 14px;
+	left: -87px;
+	opacity: 0;
+
+}
+
+#check2-xnor {
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 134px;
+	left: -127px;
+	opacity: 0;
+}
+
+.xnor .customCheck11 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -112px;
+	left: -88px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+.xnor .customCheck12 {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: -45px;
+	left: -128px;
+	cursor: pointer;
+	background-image: url(../img/btn1.png);
+	background-size: cover;
+}
+
+.xnor #check1-xnor:checked ~ .customCheck11 {
+	background-image: url(../img/btn2.png);
+}
+.xnor #check2-xnor:checked ~ .customCheck12{
+	background-image: url(../img/btn2.png);
+}

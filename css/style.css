@@ -30,7 +30,7 @@ body{
 }
 
 table,tr,td,th {
-	border: 3px solid white;
+	border: 2px solid white;
 	border-collapse: collapse;
 	color: white;
 	text-align: center;
@@ -40,10 +40,11 @@ table,tr,td,th {
 } 
 table {
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 45px;
+	left: 50%;
 	opacity: 0.1;
 	transition: 0.3s;
+	transform: translateX(-50%);
 }
 
 table:hover{
@@ -1057,4 +1058,67 @@ table:hover{
 }
 .xnor #check2-xnor:checked ~ .customCheck12{
 	background-image: url(../img/btn2.png);
+}
+
+/*================ Footer ===============*/
+
+footer{
+	text-align: center;
+	width: 100%;
+	background-color: #2d3436;
+	color: white;
+	font-weight: bold;
+}
+
+footer p{
+	padding: 20px 0;
+}
+
+footer .fa-heart{
+	color: indianred;
+}
+
+/*================ Nav ===============*/
+
+nav {
+
+	width: 100%;
+	background-color: #2d3436;
+	color: white;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 60px;
+
+}
+nav p{
+	padding: 10px 0;
+	font-size: 15px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	padding: 10px 5px;
+	list-style-type: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 13px;
+	transition: 0.4s;
+	height: 36px;
+	display: block;
+}
+
+nav ul li a:hover{
+	background-color: #34495e;
+	color: white;
 }

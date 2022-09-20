@@ -1068,10 +1068,13 @@ footer{
 	background-color: #2d3436;
 	color: white;
 	font-weight: bold;
+	
+
 }
 
 footer p{
-	padding: 20px 0;
+	height: 36px;
+	line-height: 2;
 }
 
 footer .fa-heart{

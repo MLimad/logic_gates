@@ -1,1 +1,3 @@
-"# logic_gates" 
+"# logic_gates"
+
+![result](img/result.png)
